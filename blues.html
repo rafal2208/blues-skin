@@ -9,72 +9,184 @@
         padding:0;
     }
     body {
-        background: #fffad6 url('blues-bkg-top.jpg') repeat-x;
         margin: 0;
         padding: 0;
+        background: #fffad6;
     }
     header {
-        position: relative;    
         display: block;    
-        width:980px;
+        width: 100%;
+        height: 200px;
+        margin: 0;
+        padding:0;
+        background: #fffad6 url('header-bkg.jpg') repeat-x;
+    }
+    
+    header div {
+        position: relative;
+        width: 980px;
         height: 200px;
         margin: 0 auto;
-/*        border: 1px solid red; */
-        height: 200px;
-        padding:0;
-/*        background: red; */
-    }
+        padding: 0;
+    }    
+    
     header h1 {
+        position: absolute;    
         width: 400px;
         height: 200px;
-        position: absolute;
-        top: 0;
-        left: 0;
         margin: 0;
         padding: 0;
-        background: url('logo.jpg') no-repeat;                
-        text-indent: -2000em;
+        top: 0;
+        left: 0;
     }
+    
+    header h1 a {
+        position: absolute;    
+        display: block;
+        width: 400px;
+        height: 200px;
+        margin: 0;
+        padding: 0;
+        top: 0;
+        left: 0;
+    }    
+    
+    header h1 a span {
+        position: absolute;    
+        display: block;
+        width: 400px;
+        height: 200px;
+        margin: 0;
+        padding: 0;
+        top: 0;
+        left: 0;
+        background: url('logo-off.jpg') no-repeat;                
+    }        
+    
+    header h1 a:hover span {
+        background: url('logo-on.jpg') no-repeat;                
+    }            
+    
     header ul {    
         margin: 0;
         padding: 0;
+        list-style-type: none;
     }
-
-/*    
-    header h1 a {
+    
+    header #o1 {    
+        position: absolute;    
         display: block;
-        width: 400px;
+        width: 118px;
         height: 200px;
-        margin:0;
-        padding: 0;
-        background: url('logo.jpg') no-repeat;        
+        top: 0;
+        left: 400px;
     }    
-*/    
-/*    
-    header h1 a span {
+    header #o1 a {    
+        position: relative;
         display: block;
-        width: 400px;
+        width: 118px;
         height: 200px;
-
-        margin: 0;
-        padding:0;
     }        
-*/    
+    header #o1 a span {    
+        position: absolute;
+        display: block;
+        width: 118px;
+        height: 200px;    
+        top: 0;
+        left: 0;
+        background: url('artists-off.png') no-repeat;
+    }            
+    header #o1 a:hover span {    
+        background: url('artists-on.png') no-repeat;    
+    }                
+    
+    
+    header #o2 {    
+        position: absolute;    
+        display: block;
+        width: 111px;
+        height: 200px;
+        top: 0;
+        left: 518px;
+    }    
+    header #o2 a {    
+        position: relative;
+        display: block;
+        width: 118px;
+        height: 200px;
+    }        
+    header #o2 a span {    
+        position: absolute;
+        display: block;
+        width: 118px;
+        height: 200px;    
+        top: 0;
+        left: 0;
+        background: url('songs-off.png') no-repeat;
+    }            
+    header #o2 a:hover span {    
+        background: url('songs-on.png') no-repeat;    
+    }         
+    
+    
+    header #o3 {    
+        position: absolute;    
+        display: block;
+        width: 105px;
+        height: 200px;
+        top: 0;
+        left: 629px;
+    }    
+    header #o3 a {    
+        position: relative;
+        display: block;
+        width: 118px;
+        height: 200px;
+    }        
+    header #o3 a span {    
+        position: absolute;
+        display: block;
+        width: 118px;
+        height: 200px;    
+        top: 0;
+        left: 0;
+        background: url('songs-off.png') no-repeat;
+    }            
+    header #o3 a:hover span {    
+        background: url('songs-on.png') no-repeat;    
+    }             
+    
+    #content {
+        width: 980px;
+        margin: 50px auto;
+    }
+    
+    footer {
+        height: 200px;
+        width: 100%;
+        background: url('footer-bkg.jpg') repeat-x;
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+    }
     
     </style>
   </head>
 <body>
 <header>
-    <h1><a href="#">Blues</a></h1>
+  <div>
+    <h1><a href="#">Blues<span></span></a></h1>
     <nav>
         <ul>
-            <li><a href="#">artist</a></li>
-            <li><a href="#">songs</a></li>
-            <li><a href="#">clips</a></li>
+            <li id="o1"><a href="#">artist<span></span></a></li>
+            <li id="o2"><a href="#">songs<span></span></a></li>
+            <li id="o3"><a href="#">clips<span></span></a></li>
         </ul>
     </nav>
+  </div>      
 </header>
-<div lang="la">
+
+<div id="content" lang="la">
     Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
     Suspendisse nunc pede, aliquet at, tincidunt id, sodales in,
     nulla. Pellentesque viverra ipsum ac quam. In hac habitasse
