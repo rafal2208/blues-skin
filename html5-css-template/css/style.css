@@ -6,6 +6,8 @@ body {
     margin: 0;
     padding: 0;
     background: #fffad6;
+    font-family: Georgia, serif;
+    font-size: 75%;
 }
 header {
     display: block;    
@@ -144,10 +146,10 @@ header #o3 a span {
     height: 200px;    
     top: 0;
     left: 0;
-    background: url('../images/songs-off.png') no-repeat;
+    background: url('../images/clips-off.png') no-repeat;
 }            
 header #o3 a:hover span {    
-    background: url('../images/songs-on.png') no-repeat;
+    background: url('../images/clips-on.png') no-repeat;
 }             
 
 #content {
@@ -155,11 +157,14 @@ header #o3 a:hover span {
     margin: 50px auto;
 }
 
+#content p {
+    line-height: 250%;
+}
+
 footer {
     height: 200px;
     width: 100%;
     background: url('../images/footer-bkg.jpg') repeat-x;
-    position: absolute;
     bottom: 0;
     text-align: center;
 }
