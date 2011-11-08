@@ -9,8 +9,6 @@ body {
     background: #fffad6 url('../images/header-bkg.jpg') repeat-x;
 }
 
-
-
 header {
     display: block;
     width: 100%;
@@ -51,11 +49,11 @@ header h1 a span {
     height: 200px;
     top: 0;
     left: 0;
-    background: url('../images/logo-off.jpg') no-repeat;
+    background: url('../images/sprites.jpg') no-repeat 0 0;
 }        
 
 header h1 a:hover span {
-    background: url('../images/logo-on.jpg') no-repeat;
+    background: url('../images/sprites.jpg') no-repeat 0 -200px;
 }            
 
 header ul {    
@@ -83,10 +81,10 @@ header #o1 a span {
     height: 200px;    
     top: 0;
     left: 0;
-    background: url('../images/artists-off.png') no-repeat;
+    background: url('../images/sprites.jpg') no-repeat -400px 0;
 }            
 header #o1 a:hover span {    
-    background: url('../images/artists-on.png') no-repeat;
+    background: url('../images/sprites.jpg') no-repeat -400px -200px;
 }                
 
 
@@ -111,10 +109,10 @@ header #o2 a span {
     height: 200px;    
     top: 0;
     left: 0;
-    background: url('../images/songs-off.png') no-repeat;
+    background: url('../images/sprites.jpg') no-repeat -518px 0;
 }            
 header #o2 a:hover span {    
-    background: url('../images/songs-on.png') no-repeat;
+    background: url('../images/sprites.jpg') no-repeat -518px -200px;
 }         
 
 
@@ -139,10 +137,10 @@ header #o3 a span {
     height: 200px;    
     top: 0;
     left: 0;
-    background: url('../images/clips-off.png') no-repeat;
+    background: url('../images/sprites.jpg') no-repeat -623px 0;
 }            
 header #o3 a:hover span {    
-    background: url('../images/clips-on.png') no-repeat;
+    background: url('../images/sprites.jpg') no-repeat -623px -200px;
 }             
 
 #content {
