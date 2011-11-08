@@ -1,21 +1,23 @@
-html {
-    margin: 0;
-    padding:0;
+html, body {
+    height: 100%;
 }
+
 body {
-    margin: 0;
-    padding: 0;
     background: #fffad6;
     font-family: Georgia, serif;
     font-size: 75%;
+    background: #fffad6 url('../images/header-bkg.jpg') repeat-x;
 }
+
+
+
 header {
-    display: block;    
+    display: block;
     width: 100%;
     height: 200px;
-    margin: 0;
-    padding:0;
-    background: #fffad6 url('../images/header-bkg.jpg') repeat-x;
+    position: absolute;
+    top: 0;
+    left: center;
 }
 
 header div {
@@ -23,15 +25,12 @@ header div {
     width: 980px;
     height: 200px;
     margin: 0 auto;
-    padding: 0;
 }    
 
 header h1 {
     position: absolute;    
     width: 400px;
     height: 200px;
-    margin: 0;
-    padding: 0;
     top: 0;
     left: 0;
 }
@@ -41,8 +40,6 @@ header h1 a {
     display: block;
     width: 400px;
     height: 200px;
-    margin: 0;
-    padding: 0;
     top: 0;
     left: 0;
 }    
@@ -52,8 +49,6 @@ header h1 a span {
     display: block;
     width: 400px;
     height: 200px;
-    margin: 0;
-    padding: 0;
     top: 0;
     left: 0;
     background: url('../images/logo-off.jpg') no-repeat;
@@ -64,8 +59,6 @@ header h1 a:hover span {
 }            
 
 header ul {    
-    margin: 0;
-    padding: 0;
     list-style-type: none;
 }
 
@@ -154,17 +147,35 @@ header #o3 a:hover span {
 
 #content {
     width: 980px;
-    margin: 50px auto;
+    min-height: 100%;
+    margin: 0 auto -200px auto;
 }
 
 #content p {
     line-height: 250%;
 }
 
+#content .text {
+    margin: 0 auto;
+    display: block;
+    padding-top: 200px;
+}
+
+#content .push {
+    height: 200px;
+    border: 1px solid red;
+}
+
 footer {
     height: 200px;
     width: 100%;
     background: url('../images/footer-bkg.jpg') repeat-x;
-    bottom: 0;
+    position: relative;
+}
+
+footer div {
+    position: absolute;
+    width: 100%;
+    bottom: 50px;
     text-align: center;
 }
